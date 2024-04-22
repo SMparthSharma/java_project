@@ -38,7 +38,7 @@ public class calculator {
                         break;
                     }
                 }
-                temp = Integer.toString(Integer.parseInt(value1) * Integer.parseInt(value2));
+                temp = Float.toString(Float.parseFloat(value1) * Float.parseFloat(value2));
 
                 input = input.replace(value1 + input.charAt(i) + value2, temp);
                
@@ -64,7 +64,7 @@ public class calculator {
                 }
 
                 try {
-                temp = Integer.toString(Integer.parseInt(value1) / Integer.parseInt(value2));
+                    temp = Float.toString(Float.parseFloat(value1) / Float.parseFloat(value2));
                     
                 } catch (ArithmeticException e) {
                     // TODO: handle exception
@@ -95,7 +95,7 @@ public class calculator {
                         value2=value2+input.charAt(j);
                     }else{break;}
                 }
-                temp = Integer.toString(Integer.parseInt(value1) + Integer.parseInt(value2));
+                temp = Float.toString(Float.parseFloat(value1) + Float.parseFloat(value2));
 
                 input = input.replace(value1 + input.charAt(i) + value2, temp);
                 
@@ -114,7 +114,7 @@ public class calculator {
                     }else{break;}
                 }
                 try {
-                    temp = Integer.toString(Integer.parseInt(value1) - Integer.parseInt(value2));
+                    temp = Float.toString(Float.parseFloat(value1) - Float.parseFloat(value2));
                 } catch (Exception e) {
                     // TODO: handle exception
                    
